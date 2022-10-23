@@ -85,4 +85,23 @@ TCP är ett förbindelselöst protokoll=F=
 Mottagarens IP-adress och VCI-värdet i paketet är inte relaterade till varandra=T=
 Mottagarens IP-adress och VCI-värdet i paketet är relaterade till varandra=F=
 ADSL står för Autonomous Data Session Link=F=
-ADSL står för Asymmetric Digital Subscriber Line=T
+ADSL står för Asymmetric Digital Subscriber Line=T=
+Fysiska lagret i OSI-modellen arbetar med bitar=T=
+Fysiska lagret i OSI-modellen arbetar med paket=F=
+Länklagret i OSI-modellen arbetar med paket=F=
+Länklagret i OSI-modellen arbetar med ramar=T=
+Nätverkslagret i OSI-modellen arbetar med bitar=F=
+Nätverkslagret i OSI-modellen arbetar med segment=F=
+Nätverkslagret i OSI-modellen arbetar med paket=T=
+Transportlagret i OSI-modellen arbetar med ramar=F=
+Transportlagret i OSI-modellen arbetar med paket=F=
+Transportlagret i OSI-modellen arbetar med data=F=
+Transportlagret i OSI-modellen arbetar med segment=T=
+Sessionslagret i OSI-modellen arbetar med data=T=
+Sessionslagret i OSI-modellen arbetar med segment=F=
+Presentationslagret i OSI-modellen tillhandahåller användartjänster (t.ex. e-post och filöverföring)=F=
+Applikationslagret i OSI-modellen ansvarar för översättning, komprimering och kryptering=F=
+Multiplexering används när fysiska länkar behöver delas av flera förbindelser=T=
+MAC är en dynamisk lokal adress som varierar=F=
+En ARP-tabell kopplar samman VCI och IP-adresser=F=
+En ARP-tabell kopplar samman MAC och IP-adresser=T
