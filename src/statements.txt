@@ -82,6 +82,7 @@ Bellman Fords algoritm används för Link-state routing=F=
 Dijkstras algoritm används för Link-state routing=T=
 Bellman Fords algoritm används för Direct-vector routing=T=
 TCP är ett förbindelselöst protokoll=F=
+Mottagarens IP-adress och VCI-värdet i paketet är inte relaterade till varandra=T=
 Mottagarens IP-adress och VCI-värdet i paketet är relaterade till varandra=F=
 ADSL står för Autonomous Data Session Link=F=
 ADSL står för Asymmetric Digital Subscriber Line=T
