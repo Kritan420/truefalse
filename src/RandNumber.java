@@ -19,4 +19,8 @@ public class RandNumber {
         return value;
     }
 
+    void reset() {
+        Random rand = new Random();
+        value = rand.nextInt(size);
+    }
 }

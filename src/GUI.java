@@ -27,6 +27,7 @@ public class GUI{
         JLabel labelC = new JLabel("Correct: " + c.getValue());
         JLabel labelW = new JLabel("Wrong: " + w.getValue());
         JLabel labelT = new JLabel("Total: " + t.getValue());
+        JLabel labelS = new JLabel("Statementcount: " + list.get(r.getValue()).getCount());
 
 
         JButton trueButton = new JButton("True");
@@ -38,7 +39,14 @@ public class GUI{
                 c.increment();
                 labelC.setText("Correct: " + c.getValue());
                 r.newRand();
-                label.setText(list.get(r.getValue()).getStatement());
+                String statement = list.get(r.getValue()).getStatement();
+                while (list.get(r.getValue()).getCount() > list.size()/20 && t.getValue() < list.size()*2)  {
+                    r.newRand();
+                    statement = list.get(r.getValue()).getStatement();
+                    labelS.setText("Statementcount: " + list.get(r.getValue()).getCount());
+                }
+                label.setText(statement);
+                labelS.setText("Statementcount: " + list.get(r.getValue()).getCount());
             }
             else {
                 w.increment();
@@ -53,7 +61,14 @@ public class GUI{
                 c.increment();
                 labelC.setText("Correct: " + c.getValue());
                 r.newRand();
-                label.setText(list.get(r.getValue()).getStatement());
+                String statement = list.get(r.getValue()).getStatement();
+                while (list.get(r.getValue()).getCount() > list.size()/20 && t.getValue() < list.size()*2) {
+                    r.newRand();
+                    statement = list.get(r.getValue()).getStatement();
+                    labelS.setText("Statementcount: " + list.get(r.getValue()).getCount());
+                }
+                label.setText(statement);
+                labelS.setText("Statementcount: " + list.get(r.getValue()).getCount());
             }
             else {
                 w.increment();
@@ -67,11 +82,15 @@ public class GUI{
             c.reset();
             w.reset();
             t.reset();
-            r.newRand();
+            for (int i = 0; i < list.size(); i++) {
+                list.get(i).reset();
+            }
+            r.reset();
             label.setText(list.get(r.getValue()).getStatement());
             labelC.setText("Correct: " + c.getValue());
             labelW.setText("Wrong: " + w.getValue());
             labelT.setText("Total: " + t.getValue());
+            labelS.setText("Statementcount: " + list.get(r.getValue()).getCount());
         });
 
         jPanel.add(trueButton);
@@ -80,6 +99,7 @@ public class GUI{
         jPanel.add(labelW);
         jPanel.add(labelT);
         jPanel.add(resetButton);
+        jPanel.add(labelS);
 
         pane.add(label);
         pane.add(jPanel, BorderLayout.SOUTH);

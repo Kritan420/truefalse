@@ -1,6 +1,7 @@
 public class Statements {  
     private String Statement;
     private boolean bool;
+    private int count = 0;
 
     public Statements(String statement, String bool) {
         this.Statement = statement;
@@ -13,11 +14,20 @@ public class Statements {
     }
 
     public String getStatement() {
-        return Statement;
+        count++;
+        return Statement; 
     }
 
     public boolean getBool() {
         return bool;
+    }
+
+    public int getCount() {
+        return count;
+    }
+
+    void reset() {
+        count = 0;
     }
     
 }
