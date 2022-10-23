@@ -29,7 +29,6 @@ public class GUI{
         JLabel labelT = new JLabel("Total: " + t.getValue());
         JLabel labelS = new JLabel("Statementcount: " + list.get(r.getValue()).getCount());
 
-
         JButton trueButton = new JButton("True");
         JButton falseButton = new JButton("False");
         JButton resetButton = new JButton("Reset");
