@@ -4,16 +4,16 @@ import java.util.Random;
 public class RandNumber {
     private int value = 0;
     private int size = 0;
-    
+    Random rand = new Random();
 
     public RandNumber(ArrayList<Statements> list) {
-        Random rand = new Random();
+        //Random rand = new Random();
         size = list.size();
         value = rand.nextInt(size);
     }
 
     public void newRand() {
-        Random rand = new Random();
+        //Random rand = new Random();
         value = rand.nextInt(size);
     }
 
