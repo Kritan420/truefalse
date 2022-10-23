@@ -39,6 +39,7 @@ public class GUI{
                 labelC.setText("Correct: " + c.getValue());
                 r.newRand();
                 String statement = list.get(r.getValue()).getStatement();
+                jPanel.setBackground(Color.decode("#A5D6A7"));
                 while (list.get(r.getValue()).getCount() > list.size()/35 && t.getValue() < list.size()*2)  {
                     r.newRand();
                     statement = list.get(r.getValue()).getStatement();
@@ -49,6 +50,7 @@ public class GUI{
             }
             else {
                 w.increment();
+                jPanel.setBackground(Color.decode("#EF9A9A"));
                 labelW.setText("Wrong: " + w.getValue());
             }
             t.increment();
@@ -61,6 +63,7 @@ public class GUI{
                 labelC.setText("Correct: " + c.getValue());
                 r.newRand();
                 String statement = list.get(r.getValue()).getStatement();
+                jPanel.setBackground(Color.decode("#A5D6A7"));
                 while (list.get(r.getValue()).getCount() > list.size()/35 && t.getValue() < list.size()*2) {
                     r.newRand();
                     statement = list.get(r.getValue()).getStatement();
@@ -71,6 +74,7 @@ public class GUI{
             }
             else {
                 w.increment();
+                jPanel.setBackground(Color.decode("#EF9A9A"));
                 labelW.setText("Wrong: " + w.getValue());
             }
             t.increment();
