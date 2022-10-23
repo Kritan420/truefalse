@@ -22,11 +22,13 @@ public class GUI{
         JPanel jPanel = new JPanel();
 
         JLabel label = new JLabel(list.get(r.getValue()).getStatement(), JLabel.CENTER);
+        label.setFont(new Font("Verdana", 2, 15));
+        
         JLabel labelC = new JLabel("Correct: " + c.getValue());
         JLabel labelW = new JLabel("Wrong: " + w.getValue());
         JLabel labelT = new JLabel("Total: " + t.getValue());
 
-        label.setFont(new Font("Verdana", 2, 15));
+
         JButton trueButton = new JButton("True");
         JButton falseButton = new JButton("False");
         JButton resetButton = new JButton("Reset");
