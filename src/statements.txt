@@ -19,7 +19,7 @@ Ett autonomt system består alltid av en router + de hostar som kan nå routern 
 I ett Virtual circuit-nät kommer paketen fram i samma ordning som de sänds=T=
 I ett datagramnätverk kommer alltid alla paket mellan sändare och mottagare att gå samma väg=F=
 Lager 3 i OSI-modellen förmedlar PPP-ramar=F=
-Ett ICMP slickas alltid till ursprungsavsändaren=T=
+Ett ICMP skickas alltid till ursprungsavsändaren=T=
 FDM är en analog multiplexeringsteknik som kombinerar analoga signaler=T=
 På en ADSL-ledning frekvensutrymmet för tal är större än frekvensutrymmet för uppströmsdata=F=
 Adressen i ett IPv6 paket är 64 bitar lång=F=
@@ -76,4 +76,11 @@ Jitter innebär att fördröjningen mellan en sändare och mottagare varierar s�
 Inom köteorin anger µ medeltiden mellan två betjäningar=F=
 LEO-satelliter används till exempel för GPS=F=
 LINUX-kommandot ifconfig (som användes i laboration) visar vilka nätverkskort som datorn har och vilka Ethernet- respektive IPadresser som de har=T=
-ARP gör det möjligt för en dator att ta reda på Ethernetadressen för vilken annan dator som helst på Internet=F
+ARP gör det möjligt för en dator att ta reda på Ethernetadressen för vilken annan dator som helst på Internet=F=
+Dijkstras algoritm används för Direct-vector routing=F=
+Bellman Fords algoritm används för Link-state routing=F=
+Dijkstras algoritm används för Link-state routing=T=
+Bellman Fords algoritm används för Direct-vector routing=T=
+TCP är ett förbindelselöst protokoll=F=
+Mottagarens IP-adress och VCI-värdet i paketet är relaterade till varandra=F=
+ADSL står för Autonomous Data Session Link=F
