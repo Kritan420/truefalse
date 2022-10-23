@@ -89,6 +89,7 @@ public class GUI{
                 list.get(i).reset();
             }
             r.reset();
+            jPanel.setBackground(null);
             label.setText(list.get(r.getValue()).getStatement());
             labelC.setText("Correct: " + c.getValue());
             labelW.setText("Wrong: " + w.getValue());
