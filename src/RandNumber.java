@@ -7,13 +7,11 @@ public class RandNumber {
     Random rand = new Random();
 
     public RandNumber(ArrayList<Statements> list) {
-        //Random rand = new Random();
         size = list.size();
         value = rand.nextInt(size);
     }
 
     public void newRand() {
-        //Random rand = new Random();
         value = rand.nextInt(size);
     }
 
