@@ -40,7 +40,7 @@ public class GUI{
                 r.newRand();
                 String statement = list.get(r.getValue()).getStatement();
                 jPanel.setBackground(Color.decode("#A5D6A7"));
-                while (list.get(r.getValue()).getCount() > list.size()/35 && t.getValue() < list.size()*2)  {
+                while (list.get(r.getValue()).getCount() > 3)  {
                     r.newRand();
                     statement = list.get(r.getValue()).getStatement();
                     labelS.setText("Statementcount: " + list.get(r.getValue()).getCount());
@@ -64,7 +64,7 @@ public class GUI{
                 r.newRand();
                 String statement = list.get(r.getValue()).getStatement();
                 jPanel.setBackground(Color.decode("#A5D6A7"));
-                while (list.get(r.getValue()).getCount() > list.size()/35 && t.getValue() < list.size()*2) {
+                while (list.get(r.getValue()).getCount() > 3) {
                     r.newRand();
                     statement = list.get(r.getValue()).getStatement();
                     labelS.setText("Statementcount: " + list.get(r.getValue()).getCount());
